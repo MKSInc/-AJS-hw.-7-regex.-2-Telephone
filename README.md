@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/s9y5cf81wyekwxov?svg=true)](https://ci.appveyor.com/project/MKSInc/ajs-hw-7-regex-2-telephone)
+
 # 7. Домашнее задание к лекции «Регулярные выражения»
 
 **Важно**: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.

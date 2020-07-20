@@ -1,5 +1,7 @@
 // TODO: write your code here
-import templateFunc from './basic';
+import getPhoneNumber from './basic';
+
+const phoneNumbers = ['8 (927) 000-00-00', '+7 960 000 00 00', '+86 000 000 0000'];
 
 // eslint-disable-next-line no-console
-console.log(templateFunc('test'));
+phoneNumbers.forEach((phoneNumber) => console.log(`${phoneNumber}: ${getPhoneNumber(phoneNumber)}`));

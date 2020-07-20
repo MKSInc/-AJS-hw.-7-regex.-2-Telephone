@@ -1,6 +1,12 @@
-import templateFunc from '../basic';
+import getPhoneNumber from '../basic';
 
-test('temlate for test', () => {
-  const result = templateFunc('test');
-  expect(result).toBe('test');
-});
+test.each([
+  ['8 (927) 000-00-00', '+79270000000'],
+  ['+7 960 000 00 00', '+79600000000'],
+  ['+86 000 000 0000', '+860000000000'],
+])(
+  ('The method should return the correct phone number'),
+  (phoneNumber, expected) => {
+    expect(getPhoneNumber(phoneNumber)).toBe(expected);
+  },
+);
